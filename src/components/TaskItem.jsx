@@ -1,7 +1,7 @@
 import React from 'react';
-import useTaskStore from '../store/taskStore;
+import useTaskStore from '../store/taskStore';
 
-const TaskItem => ({ task }) => {
+const TaskItem = ({ task }) => {
     const toggleTask = useTaskStore((state) =>state.toggleTask);
     const removeTask = useTaskStore((state) =state.removeTask);
 
