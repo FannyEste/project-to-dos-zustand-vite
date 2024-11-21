@@ -16,3 +16,5 @@ const DaysButtons = () => {
         </div>
     );
 };
+
+export default DaysButtons;

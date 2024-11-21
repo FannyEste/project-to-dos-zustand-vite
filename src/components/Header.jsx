@@ -1,19 +1,19 @@
-import React from "react";
-import useTaskStore from "../store/taskStore";
+import React from 'react';
+import useTaskStore from '../store/taskStore';
 
 const Header = () => {
-    const task = useTaskStore((state) => state.task);
-    const uncompletedCount = tasks.filter((tast) => ! task.completed) .lenght;
+  const tasks = useTaskStore((state) => state.tasks) || []; 
+  const uncompletedCount = tasks.filter((task) => !task.completed).length;
 
-    return (
-      <header className="mb-4">
-        <h1 className="text-2xl font-bold">Todo App</h1>
-        <p>
-            {task.length} task{task.lenght !== 1 && 's'} (
-                {uncompletedCound} uncompleted)
-        </p>
-      </header>  
-    );
+  return (
+    <header className="mb-4">
+      <h1 className="text-2xl font-bold">Todo App</h1>
+      <p>
+        {tasks.length} task{tasks.length !== 1 && 's'} (
+        {uncompletedCount} uncompleted)
+      </p>
+    </header>
+  );
 };
 
 export default Header;
