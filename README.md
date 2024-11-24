@@ -6,29 +6,27 @@
 
 # Todo - useContext Project
 
-Replace this readme with your own information about your project.
+We had to create a To-do app usig Zustand for state management, 
+the app should list all task, mark it when done, add and remove tasks, attributes and proper sizes. 
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-## Getting Started with the Project
-
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
 
 ### The Problem
 
 Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
 
+I started by designing my app using Figma. 
+I made a list with the ideal components. 
+One of my biggest problemas was trying to make my app as possible as the design, Tailwind’s utility-first approach occasionally caused conflicts with custom CSS, especially with overlapping styles for buttons, backgrounds, and borders.
+
+Careful use of Tailwind classes alongside inline styles resolved many issues. The toggle, buttons, and footer designs were adjusted to maintain consistency across light and dark modes.
+
+Im not 100% happy with the design mostly on dark mode so if I had more time i would like to fix it
+
+
 ### View it live
 
 Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
 
 ## Instructions
 

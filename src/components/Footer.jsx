@@ -17,7 +17,7 @@ const Footer = ({ theme }) => {
             margin: "0",
           }}
         >
-          © 2024 Your Company
+          © 2024 All rights reserved :P
         </p>
       </footer>
     </div>

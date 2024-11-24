@@ -30,7 +30,7 @@ const Header = ({ theme }) => {
         }}
         className="text-xl sm:text-2xl font-bold"
       >
-        Welcome, Estefanny!
+        Welcome, Estefanny ✨
       </h1>
 
       {/* Profile Image */}
