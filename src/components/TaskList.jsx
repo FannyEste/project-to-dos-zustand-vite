@@ -1,17 +1,18 @@
 import React from "react";
 import TaskItem from "./TaskItem";
-import useTaskStore from "../store/taskStore";
 
-const TaskList = () => {
-  const tasks = useTaskStore((state) => state.tasks) || []; 
-
+const TaskList = ({ tasks, toggleTask, deleteTask, theme }) => {
   return (
-    <ul className="space-y-2">
-      {tasks.length > 0 ? (
-        tasks.map((task) => <TaskItem key={task.id} task={task} />)
-      ) : (
-        <p className="text-gray-500">No tasks available. Add some!</p>
-      )}
+    <ul className="space-y-4">
+      {tasks.map((task) => (
+        <TaskItem
+          key={task.id}
+          task={task}
+          toggleTask={toggleTask}
+          deleteTask={deleteTask}
+          theme={theme}
+        />
+      ))}
     </ul>
   );
 };
