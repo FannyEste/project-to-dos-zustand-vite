@@ -24,9 +24,9 @@ Im not 100% happy with the design mostly on dark mode so if I had more time i wo
 
 
 ### View it live
+My site:
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
-
+https://estefannys-to-do-app.netlify.app
 
 ## Instructions
 
