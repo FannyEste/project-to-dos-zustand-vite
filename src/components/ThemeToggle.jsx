@@ -1,5 +1,8 @@
 import React from "react";
 
+// Provides buttons to toggle between light and dark themes. 
+// Two buttons for “Dark” and “Light” modes.
+// Each button calls the toggleTheme function passed via props to switch the theme.
 const ThemeToggle = ({ theme, toggleTheme }) => {
   return (
     <div

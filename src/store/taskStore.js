@@ -1,6 +1,7 @@
 // src/store/taskStore.js
 import { create } from "zustand";
 
+// Manages the state of all tasks globally.
 const useTaskStore = create((set) => ({
   tasks: [],
 

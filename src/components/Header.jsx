@@ -1,50 +1,35 @@
 import React from "react";
 import avatar from "../assets/avatar.svg";
 
+// Displays the app's header with a menu button, a welcome message, and a profile avatar.
 const Header = ({ theme }) => {
-  const isDarkMode = theme === "dark"; // Check the theme
+  const isDarkMode = theme === "dark"; // Check the theme for styling.
 
   return (
     <header
-      className="flex items-center justify-between px-6 py-4"
-      style={{
-        backgroundColor: isDarkMode ? "#4D72AF" : "#F5F9FF", // Navbar color
-        boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", // Consistent shadow for header
-      }}
+      className={`flex items-center justify-between px-4 py-3 sm:px-6 sm:py-4 ${
+        isDarkMode ? "bg-blue-700 text-white" : "bg-gray-100 text-blue-700"
+      }`}
     >
-      {/* Hamburger Menu */}
+      {/* Menu Button */}
       <button
-        style={{
-          color: isDarkMode ? "#F5F9FF" : "#4D72AF", // Hamburger color
-        }}
-        className="text-4xl font-bold"
+        className="text-2xl sm:text-3xl font-bold"
         aria-label="Menu"
       >
         &#9776;
       </button>
 
-      {/* Header Title */}
-      <h1
-        style={{
-          color: isDarkMode ? "#F5F9FF" : "#4D72AF", // Header text color
-        }}
-        className="text-xl sm:text-2xl font-bold"
-      >
+      {/* Welcome Message */}
+      <h1 className="text-lg sm:text-xl font-bold text-center flex-1 truncate">
         Welcome, Estefanny ✨
       </h1>
 
-      {/* Profile Image */}
-      <div
-        className="flex items-center"
-        style={{
-          width: "90px", // Adjusted width
-          height: "90px", // Adjusted height
-        }}
-      >
+      {/* Profile Avatar */}
+      <div className="flex items-center w-12 h-12 sm:w-16 sm:h-16">
         <img
           src={avatar}
           alt="Profile"
-          className="w-full h-full object-cover" // Removed rounded-full for square shape
+          className="w-full h-full object-cover rounded-full"
         />
       </div>
     </header>

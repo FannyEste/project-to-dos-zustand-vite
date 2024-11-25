@@ -1,5 +1,6 @@
 import React from "react";
 
+//Represents an individual task in the task list.
 const TaskItem = ({ task, toggleTask, deleteTask, theme }) => {
   return (
     <li
@@ -27,8 +28,8 @@ const TaskItem = ({ task, toggleTask, deleteTask, theme }) => {
               fontWeight: "bold", // Make it bold
             }}
           >
-            ✓
-          </span>
+            ✓ 
+          </span> 
         )}
       </button>
 

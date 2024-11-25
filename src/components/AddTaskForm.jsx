@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+// Allows users to add new tasks to the task list.
+//Maintains a title state to track the input field value.
 const AddTaskForm = ({ addTask, theme }) => {
   const [title, setTitle] = useState(""); // Local state for task input
 
